@@ -1,0 +1,5 @@
+google-adk[a2a]
+a2a-sdk[http-server]
+python-dotenv
+mcp            
+uvicorn
