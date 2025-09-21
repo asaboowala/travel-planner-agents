@@ -6,7 +6,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 # --- Flights MCP (Python stdio via uv) ---
-FLIGHTS_DIR = os.path.expanduser(os.getenv("FLIGHTS_DIR"))
+FLIGHTS_DIR = os.path.expanduser(os.getenv("FLIGHTS_MCP_DIR"))
 flights_toolset = MCPToolset(
     connection_params=StdioConnectionParams(
         server_params=StdioServerParameters(
