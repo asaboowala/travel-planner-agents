@@ -3,3 +3,4 @@ a2a-sdk[http-server]
 python-dotenv
 mcp            
 uvicorn
+langchain-tavily
