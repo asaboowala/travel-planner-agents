@@ -1,5 +1,8 @@
+import asyncio
+from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset
 from google.adk.agents import Agent
 from tools import flights_toolset
+
 
 print("flights_toolset", flights_toolset)
 
@@ -15,8 +18,7 @@ flights_agent = Agent(
     tools=[flights_toolset], 
 )
 
-import asyncio
-from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset
+
 
 async def debug_list_mcp_tools():
     # ADK’s MCPToolset fetches schemas asynchronously
