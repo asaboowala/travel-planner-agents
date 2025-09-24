@@ -8,7 +8,7 @@ load_dotenv(find_dotenv())
 
 activities_search_tool = TavilySearch(
     max_results=10, 
-    topic="travel", 
+    topic="general", 
     include_images=True, 
     search_depth="advanced"
 )

@@ -16,13 +16,3 @@ activities_agent = Agent(
                 "If the tool is successful, present the activities information clearly to help the user build a travel plan.",
     tools=[activities_search_tool], 
 )
-
-
-async def debug_list_mcp_tools():
-    # ADK’s MCPToolset fetches schemas asynchronously
-    tools = await activities_search_tool.get_tools(None)  # read-only context
-    print("[MCP] Discovered tools:")
-    for t in tools:
-        print(f" - {t.name}: {getattr(t, 'description', '')}")
-
-asyncio.get_event_loop().run_until_complete(debug_list_mcp_tools())
